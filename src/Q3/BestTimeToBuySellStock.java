@@ -42,3 +42,8 @@ public class BestTimeToBuySellStock {
         System.out.println(maxProfit(prices));
     }
 }
+
+/*
+ * TC: O(n)
+ * SC: O(1)
+ */
