@@ -1,5 +1,5 @@
 # CS5343_Assignment2
 
 ## Submitted By:
-### shivam gautam 
-### sourabh tantuway
+### Shivam Gautam (SXG200011)
+### Sourabh Tantuway (SXT200011)
