@@ -40,7 +40,15 @@ public class ProductOfArrayExceptSelf {
         return ans;
     }
     public static void main(String[] args) {
-        
+        int[] nums = new int[] {1,2,3,4};
+        int[] ans = productExceptSelf(nums);
+        System.out.print("[");
+        for(int i=0;i<ans.length;i++) {
+            System.out.print(ans[i]);
+            if(i != ans.length-1) System.out.print(",");
+        }
+        System.out.print("]");
+        System.out.println();
     }
 }
 
