@@ -17,8 +17,6 @@
 
 package Q29;
 
-import Q1.IntersectNode;
-import Q28.MinStack;
 
 public class SortList {
 
