@@ -15,7 +15,7 @@
  a neighbor that is outside the array.
  You must write an algorithm that runs in O(log n) time.
 
- link:
+ link:  https://leetcode.com/problems/find-peak-element/
 
  **/
 
@@ -43,3 +43,9 @@ public class FindPeak {
         return search(nums, mid + 1, r);
     }
 }
+
+//Complexity Analysis:
+/**
+ * TC : O(log n),  n size array
+ * SC : O(1)  , No additional space required
+ */
