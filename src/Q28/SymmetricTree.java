@@ -127,6 +127,6 @@ public class SymmetricTree{
 
 //Complexity Analysis:
 /**
- * TC : O(1)  , all operations
+ * TC : O(n)  ,  number of nodes
  * SC : O(n)  , stack size at any time
  */
