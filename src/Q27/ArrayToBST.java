@@ -108,6 +108,6 @@ public class ArrayToBST {
 
 //Complexity Analysis:
 /**
- * TC : O(n)  , where n will be the nodes
+ * TC : O(n)  , n is values in array or nodes in tree
  * SC : O(n)  , to store the tree
  */
