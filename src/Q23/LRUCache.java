@@ -130,4 +130,7 @@ public class LRUCache {
     }
 }
 
-
+/**
+ * TC : O(1) for all operations
+ * SC : O(n)  n is current entries in Cache
+ */
