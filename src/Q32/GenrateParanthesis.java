@@ -65,5 +65,5 @@ public class GenrateParanthesis {
  *
  *
  * TC : O(4^n / sqrt(n))  , Each valid sequence has at most n steps during the backtracking procedure.
- * SC : O(4^n / sqrt(n))
+ * SC : O(4^n / sqrt(n)) , size for string builder
  */
