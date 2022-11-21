@@ -4,7 +4,7 @@
  * //SXT200011, SXG200011
  * //Section: 001
 
- PROBLEM STATEMENT: [Dynamic Programming]
+ PROBLEM STATEMENT: [Recursion]
      You are climbing a staircase. It takes n steps to reach the top.
      Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
@@ -16,29 +16,43 @@
      3. 2 steps + 1 step
 
 
- link:https://leetcode.com/problems/climbing-stairs/description/
+ link: https://leetcode.com/problems/climbing-stairs/description/
 
  **/
 
 package Q24;
 public class ClimbingStairs {
 
+    public static int climbStairs(int n){
+        int arr[] =  new int[n + 1];
+        arr[n] = climbRecursively(arr, n);
+        return arr[n];
+    }
+
+    public static int climbRecursively(int arr[], int n){
+
+        if(n == 1){
+            arr[1] = 1;
+            return 1;
+        }
+        if(n == 2){
+            arr[n - 1] = 1;
+            arr[n] = 2;
+            return 2;
+        }
+
+        if(arr[n] != 0)
+            return arr[n];
+        else{
+            arr[n] = climbRecursively(arr, n - 1) + climbRecursively(arr, n - 2);
+            return arr[n];
+        }
+    }
 
     public static void main(String[] args){
 
         System.out.println("Number of ways, stair of size 5 will be climbed is : " + climbStairs(5));
 
-    }
-
-    public static int climbStairs(int n){
-        int dp[] = new int[n+1];
-        dp[0]=1;
-        dp[1]=1;
-
-        for(int i=2; i<n+1; i++)
-            dp[i]=dp[i-1]+dp[i-2];
-
-        return dp[n];
     }
 }
 
